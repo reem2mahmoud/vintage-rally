@@ -1,0 +1,604 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Swansea;
+}
+
+main {
+    width: 100%;
+    min-height: 800px;
+}
+
+hr {
+
+    width: 35%;
+    margin: 10px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**==================================================
+H1==============================================**/
+#about_us div h1,
+#contact_us h1,
+#registration h1,
+#que_ans h1 , 
+#drivers h1 {
+    color: #434c9c;
+    font-size: 3vw;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+/**==================================================
+NAVBAR==============================================**/
+
+nav {
+    width: 100%;
+    min-height: 100px;
+    background-color: #000;
+    background-image: linear-gradient(to bottom, #000, #636060);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+}
+
+nav .logo {
+    width: 40%;
+    height: 100px;
+    line-height: 100px;
+    margin: auto 60px
+}
+
+nav .logo img {
+    width: 18%;
+    height: 92px;
+}
+
+nav .menu {
+    width: 50%;
+    height: 100px;
+}
+
+nav .menu ul {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .menu ul li {
+    list-style: none;
+    width: 40%;
+    margin-right: 10px;
+    text-align: center;
+}
+
+nav .menu ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1.5vw;
+}
+
+
+/**==================================================
+HEADER==============================================**/
+header {
+    width: 100%;
+    min-height: 600px;
+    background-color: rgb(115, 196, 228);
+}
+
+header .header_overlay {
+    width: 100%;
+    min-height: 650px;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: circle(48.1% at 49% 3%);
+}
+
+header .search {
+    width: 200px;
+    min-height: 50px;
+    background-color: #000;
+    border-radius: 25px;
+    top: 200px;
+    left: -160px;
+    position: fixed;
+    z-index: 9999;
+    transition: all 1s;
+    line-height: 50px;
+
+}
+
+header .search:hover {
+    left: -20px;
+}
+
+header .search img {
+    width: 10%;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+header .search input {
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+
+/**==================================================
+EVENTS ====================================**/
+
+#events {
+    width: 80%;
+    min-height: 200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: -40px;
+    justify-content: space-between;
+}
+
+#events .event_block:nth-of-type(1) {
+    background: #fff url("../images/car1.png");
+    background-size: cover;
+}
+
+#events .event_block:nth-of-type(2) {
+    background: #fff url("../images/car3.png");
+}
+
+#events .event_block:nth-of-type(3) {
+    background: #fff url("../images/car2.png");
+}
+
+#events .event_block:nth-of-type(4) {
+    background: #fff url("../images/car4.png");
+}
+
+#events .event_block:nth-of-type(1),
+#events .event_block:nth-of-type(2),
+#events .event_block:nth-of-type(3),
+#events .event_block:nth-of-type(4) {
+    width: 250px;
+    height: 200px;
+    border: 2px solid rgba(253, 221, 0, .7);
+    border-radius: 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#events .event_block .join_now {
+    width: 100%;
+    height: 200px;
+    font-weight: bold;
+    font-size: 1.5vw;
+    background: rgba(253, 221, 0, .7);
+    transition: all .5s;
+    border-radius: 10px;
+    overflow: hidden;
+    clip-path: circle(0px at 0 0);
+
+}
+
+#events .event_block:hover .join_now {
+    clip-path: circle(70.4% at 0 0);
+}
+
+/**==================================================
+ABOUT-US ====================================**/
+#about_us {
+    width: 100%;
+    min-height: 300px;
+
+}
+
+#about_us div {
+    width: 80%;
+    min-height: 300px;
+    margin: auto;
+}
+
+#about_us div .about_us_block {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#about_us div .about_us_block aside {
+    width: 50%;
+    height: 250px;
+}
+
+#about_us div .about_us_block aside:nth-of-type(1) h2 {
+    color: #434C9C;
+    margin: 20px 0;
+}
+
+#about_us div .about_us_block aside:nth-of-type(1) p {
+    color: #434C9C;
+    margin: 20px 30px;
+    font-size: 1.3vw;
+}
+
+#about_us div .about_us_block aside:nth-of-type(2) {
+    background-image: url("../images/banner.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/**==================================================
+FOOTER ============================================**/
+footer {
+    width: 100%;
+    min-height: 40px;
+    background-color: #000;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 1vw;
+    color: #fff;
+}
+
+@media only screen and (max-width : 1200px) and (min-width : 992px) {
+
+    nav {
+        justify-content: center;
+    }
+
+    nav .logo {
+        width: 30%;
+    }
+
+    nav .logo img {
+        width: 40%;
+    }
+
+    nav .menu {
+        width: 50%;
+    }
+
+    nav .menu ul li a {
+        font-size: 1.5vw;
+    }
+
+    #events {
+        width: 80%;
+        min-height: 200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: -40px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width : 991px) and (min-width : 768px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav .logo {
+        width: 30%;
+    }
+
+    nav .logo img {
+        width: 40%;
+    }
+
+    nav .menu {
+        width: 50%;
+    }
+
+    nav .menu ul li a {
+        font-size: 1.5vw;
+    }
+
+    header {
+        min-height: 400px;
+    }
+
+    header .header_overlay {
+        min-height: 500px;
+        clip-path: circle(65% at 49% 3%);
+    }
+
+
+    header .search {
+        width: 160px;
+        min-height: 40px;
+        top: 200px;
+        left: -125px;
+        line-height: 40px;
+
+    }
+
+    header .search:hover {
+        left: -30px;
+    }
+
+    header .search img {
+        width: 10%;
+        height: 13px;
+    }
+
+    header .search input {
+        width: 70%;
+        height: 20px;
+    }
+
+    #about_us div .about_us_block aside:nth-of-type(1) p {
+        color: #434C9C;
+        margin: 20px 30px;
+        font-size: 1.7vw;
+    }
+
+    #about_us div .about_us_block aside:nth-of-type(2) {
+        background-image: url("../images/banner.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    footer {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width : 769px) and (min-width : 576px) {
+
+
+    nav .logo {
+        width: 30%;
+    }
+
+    nav .logo img {
+        width: 40%;
+    }
+
+    nav .menu {
+        width: 45%;
+
+    }
+
+    nav .menu ul li a {
+        font-size: 2vw;
+    }
+
+    header {
+        min-height: 400px;
+    }
+
+    header .header_overlay {
+        min-height: 400px;
+        clip-path: circle(65% at 49% 3%);
+    }
+
+
+    header .search {
+        width: 160px;
+        min-height: 40px;
+        top: 200px;
+        left: -125px;
+        line-height: 40px;
+
+    }
+
+    header .search:hover {
+        left: -30px;
+    }
+
+    header .search img {
+        width: 10%;
+        height: 13px;
+    }
+
+    header .search input {
+        width: 70%;
+        height: 20px;
+    }
+
+    #about_us {
+        width: 100%;
+        min-height: 200px;
+
+    }
+
+    #about_us div {
+        width: 80%;
+        min-height: 200px;
+        margin: auto;
+    }
+
+    #about_us div .about_us_block {
+        width: 100%;
+        min-height: 300px;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #about_us div .about_us_block aside {
+        width: 50%;
+        height: 150px;
+    }
+
+    #about_us div .about_us_block aside:nth-of-type(1) p {
+        color: #434C9C;
+        margin: 20px 30px;
+        font-size: 2vw;
+    }
+
+    footer {
+        font-size: 1.5vw;
+    }
+
+}
+
+@media only screen and (max-width : 576px) {
+
+    #about_us div h1,
+    #contact_us h1,
+    #registration h1,
+    #que_ans h1 ,
+    #drivers h1 {
+        color: #434c9c;
+        font-size: 3.5vw;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 20px 0;
+    }
+
+    nav {
+        width: 100%;
+        min-height: 150px;
+        background-color: #000;
+        background-image: linear-gradient(to bottom, #000, #636060);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        top: 0;
+        z-index: 999;
+        margin-bottom: 40px;
+    }
+
+    nav .logo {
+        width: 0% ;
+        height: 40px;
+        text-align: center;
+    }
+
+
+    nav .menu {
+
+        width: 80%;
+        min-height: 30px;
+        margin-bottom: 10px ;
+       
+    }
+
+    nav .menu ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: right ;
+        text-align: center;
+    }
+
+    nav .menu ul li {
+        list-style: none;
+        width: 25%;
+        margin-right: 10px;
+        
+    }
+
+    nav .menu ul li a {
+        font-size: 3vw;
+    }
+
+    header {
+      
+        min-height: 300px;
+      
+    }
+
+    header .header_overlay {
+        min-height: 300px;
+        clip-path: circle(70% at 49% 3%);
+    }
+
+    header .search {
+        width: 140px;
+        min-height: 40px;
+        top: 200px;
+        left: -105px;
+        line-height: 40px;
+
+    }
+
+    header .search:hover {
+        left: -15px;
+    }
+
+    header .search img {
+        width: 10%;
+        height: 13px;
+        margin-left: 5px;
+    }
+
+    header .search input {
+        width: 70%;
+        height: 20px;
+    }
+
+    #about_us {
+        min-height: 400px;
+    }
+
+    #about_us div {
+        width: 80%;
+        min-height: 300px;
+        margin: auto;
+
+    }
+
+    #about_us div .about_us_block {
+        width: 100%;
+        height: 300px;
+        margin: 0;
+        display: flex;
+        margin: 10px;
+        flex-direction: column-reverse;
+    }
+
+    #about_us div .about_us_block aside {
+        width: 100%;
+        height: 150px;
+        padding: 0;
+    }
+
+    #about_us div .about_us_block aside:nth-of-type(1) h2 {
+        color: #434C9C;
+        margin-top: 10px;
+        font-size: 2.5vw;
+    }
+
+    #about_us div .about_us_block aside:nth-of-type(1) p {
+        color: #434C9C;
+        margin: 20px 30px;
+        font-size: 2.2vw;
+    }
+
+    footer {
+        font-size: 2.2vw;
+    }
+
+}
